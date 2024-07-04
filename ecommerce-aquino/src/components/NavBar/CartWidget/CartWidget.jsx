@@ -1,9 +1,15 @@
-import { MdOutlineShoppingCart } from "react-icons/md";
 
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import { Badge } from "@mui/material";
+import { Link } from 'react-router-dom';
 
-export const CartWidget = () => {
+const CartWidget = () => {
   return (
-    <div><MdOutlineShoppingCart size="2rem" /></div>
+    <Link to="/cart">
+    <Badge badgeContent={1} color="primary">
+      <ShoppingCartIcon color="white" />
+    </Badge>
+    </Link>
   )
 }
 export default CartWidget
