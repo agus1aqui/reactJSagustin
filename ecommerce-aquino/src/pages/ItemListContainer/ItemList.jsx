@@ -6,11 +6,11 @@ export const ItemList = ({ items }) => {
     return (
         <div>
             {items.map((elemento) => {
-                return <ProductCard key={elemento.id} name={elemento.name} price={elemento.price} id={elemento.id} />
+                return <ProductCard key={elemento.id} name={elemento.name} price={elemento.price} id={elemento.id} img={elemento.img} category={elemento.category} />
             })};
         </div>
     );
 };
-//min 39
+
 
 export default ItemList;

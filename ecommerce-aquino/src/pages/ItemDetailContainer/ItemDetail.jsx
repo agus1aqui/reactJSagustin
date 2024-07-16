@@ -1,4 +1,6 @@
-const ItemDetail = ({ item }) => {
+
+
+export const ItemDetail = ({ item }) => {
   return (
     <>
       <div>

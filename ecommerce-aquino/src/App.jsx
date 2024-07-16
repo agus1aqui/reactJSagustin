@@ -8,11 +8,15 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 
 export function App() {
+
+ 
+
   return (
     <BrowserRouter>
       <Routes>
         <Route element={<NavBar />}>
           <Route path="/" element={<ItemListContainer />} />
+          <Route path="/category/:name" element={<ItemListContainer />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/itemDetail/:id" element={<ItemDetailContainer />} />
         </Route>

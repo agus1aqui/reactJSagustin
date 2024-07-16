@@ -3,19 +3,19 @@ import ItemDetail from "./ItemDetail";
 import { productos } from "../../productos";
 import { useParams } from "react-router-dom";
 
-const ItemDetailContainer = () => {
-    const { id } = useParams();
+export const ItemDetailContainer = () => {
+  const { id } = useParams();
 
-    const [item, setItem] = useState({});
+  const [item, setItem] = useState({});
 
-    useEffect(() => {
-        let producto = productos.find((producto) => producto.id === +id);
-        if (producto) {
-            setItem(producto);
-        }
-    }, [id]);
+  useEffect(() => {
+    let producto = productos.find((producto) => producto.id === +id);
+    if (producto) {
+      setItem(producto);
+    }
+  }, [id]);
 
-    return <ItemDetail item={item} />;
+  return <ItemDetail item={item} />;
 };
 
 export default ItemDetailContainer;

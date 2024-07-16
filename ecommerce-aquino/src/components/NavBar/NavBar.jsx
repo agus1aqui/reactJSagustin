@@ -8,15 +8,16 @@ export const NavBar = () => {
       <nav className="navbar">
         <div className="navbar-left">
           <Link to="/">
-          <img src="https://res.cloudinary.com/dddnglecz/image/upload/v1719872267/logo_v8x2nv.svg" alt="Logo" className="navbar-logo" />
-          <div className="navbar-title">PORSCHE</div>
+            <img src="https://res.cloudinary.com/dddnglecz/image/upload/v1719872267/logo_v8x2nv.svg" alt="Logo" className="navbar-logo" />
+            <div className="navbar-title">PORSCHE</div>
           </Link>
         </div>
         <ul className="navbar-list">
-          <li className="navbar-item"><a href="#models">Modelos</a></li>
-          <li className="navbar-item"><a href="#advice">Asesoramiento y compra</a></li>
-          <li className="navbar-item"><a href="#services">Servicios</a></li>
-          <li className="navbar-item"><a href="#cardealership">Concesionarios</a></li>
+          <li className="navbar-item"><Link to="/">All</Link></li>
+          <li className="navbar-item"><Link to="/category/sport">Sport</Link></li>
+          <li className="navbar-item"><Link to="/category/electric">Electric</Link></li>
+          <li className="navbar-item"><Link to="/category/sedan">Sedan</Link></li>
+          <li className="navbar-item"><Link to="/category/SUV">SUV</Link></li>
         </ul>
         <CartWidget />
       </nav>
