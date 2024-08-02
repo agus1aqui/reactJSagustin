@@ -1,0 +1,55 @@
+.vehicle-configuration {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.configuration-category {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.configuration-category h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+
+.configuration-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.configuration-item {
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  background-color: #282c34;
+  color: white;
+  border-radius: 10px;
+  width: 200px;
+  transition: transform 0.2s;
+}
+
+.configuration-item:hover {
+  transform: scale(1.05);
+}
+
+.configuration-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.configuration-item h3 {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.configuration-item p {
+  font-size: 1em;
+  margin: 5px 0;
+}

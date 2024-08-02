@@ -7,10 +7,14 @@ export const ItemList = ({ items }) => {
         <div>
             {items.map((elemento) => {
                 return <ProductCard key={elemento.id} name={elemento.name} price={elemento.price} id={elemento.id} img={elemento.img} category={elemento.category} />
-            })};
+            })}
         </div>
     );
 };
 
 
 export default ItemList;
+
+
+
+

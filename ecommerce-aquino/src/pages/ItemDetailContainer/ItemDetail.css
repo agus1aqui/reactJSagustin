@@ -1,0 +1,26 @@
+.item-detail {
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    background-color: #100B07;
+    color: white;
+    border-radius: 10px;
+  }
+  
+  
+  .item-detail img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .item-detail h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  .item-detail p {
+    font-size: 1.5em;
+  }
+  

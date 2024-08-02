@@ -1,0 +1,29 @@
+.checkout-button {
+    background-color: #8C1A8B;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    margin: 10px 0;
+  }
+  
+  .checkout-button:hover {
+    background-color: #6D4B87;
+  }
+  
+  .checkout-button:focus {
+    outline: none;
+  }
+  
+  .checkout-button:active {
+    background-color: #5A3B6A;
+  }
+  
+  .checkout-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  

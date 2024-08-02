@@ -1,6 +1,6 @@
 import CartWidget from './CartWidget/CartWidget';
 import './navbar.css';
-import { Outlet, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export const NavBar = () => {
   return (
@@ -14,15 +14,15 @@ export const NavBar = () => {
         </div>
         <ul className="navbar-list">
           <li className="navbar-item"><Link to="/">All</Link></li>
-          <li className="navbar-item"><Link to="/category/sport">Sport</Link></li>
-          <li className="navbar-item"><Link to="/category/electric">Electric</Link></li>
-          <li className="navbar-item"><Link to="/category/sedan">Sedan</Link></li>
+          <li className="navbar-item"><Link to="/category/SPORT">SPORT</Link></li>
+          <li className="navbar-item"><Link to="/category/ELECTRIC">ELECTRIC</Link></li>
+          <li className="navbar-item"><Link to="/category/SEDAN">SEDAN</Link></li>
           <li className="navbar-item"><Link to="/category/SUV">SUV</Link></li>
         </ul>
         <CartWidget />
       </nav>
-      <Outlet />
     </div>
   );
 };
+
 
