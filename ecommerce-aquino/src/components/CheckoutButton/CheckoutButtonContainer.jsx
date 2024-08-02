@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import CheckoutButton from './CheckoutButton';
+import { toast } from 'sonner';
 
 const CheckoutButtonContainer = ({ onAdd, stock }) => {
   const [remainingStock, setRemainingStock] = useState(stock);
@@ -13,7 +14,7 @@ const CheckoutButtonContainer = ({ onAdd, stock }) => {
       onAdd();
       setRemainingStock(prevStock => prevStock - 1);
     } else {
-      alert("Out of stock");
+      toast.error("Out of stock");
     }
   };
 
