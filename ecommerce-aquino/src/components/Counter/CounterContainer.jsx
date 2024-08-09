@@ -15,7 +15,7 @@ const CounterContainer = ({ onAdd }) => {
         if (counter > 1) {
             setCounter(counter - 1);
         } else {
-            alert("you cant subtract more")
+            //alert("you cant subtract more")
         }
     };
 
